@@ -1,0 +1,57 @@
+<tag-app>
+  <div class="bg:black c:white p:20px ps:fx b,l:0 w:100pc z:10">
+    simple div
+    <elem-button text="clickme" on-click={this.action('APP_INIT')}>
+  </div>
+  <script>
+    this.mixin('riothing');
+    this.act('APP_INIT');
+    this.on('update', console.log)
+  </script>
+</tag-app>
+
+<elem-button>
+  <a onclick={opts.onClick} class="p:10px bg:prim c:white bd:0">{opts.text}</a>
+</elem-button>
+
+<elem-table>
+  <div class="{
+      'dp:tb fs:80pc dp:td_span p:2px-5px_span dp:tr_div': true,
+      'c:green':  opts.green,
+      'c:red':    opts.red,
+    }">
+    <div each={wall in opts.walls}>
+      <span>{wall.price}</span>
+      <span>{wall.amount}</span>
+    </div>
+  </div>
+</elem-table>
+
+<tag-test>
+  <h2>{text}</h2>
+  <div class="dp:flx">
+    <elem-table walls={bids} green={true} />
+    <elem-table walls={asks} red={true} />
+  </div>
+</div>
+  <!-- <div class="dp:flx fs:80pc">
+    <div class="p:20px">
+      <div each={bid in bids}>{bid.price} {bid.amount}</div>
+    </div>
+    <div class="p:20px">
+      <div each={ask in asks}>{ask.price} {ask.amount}</div>
+    </div>
+  </div> -->
+  <script>
+    this.text = 'test';
+    this.bids = [];
+    this.asks = [];
+
+    console.log(this);
+
+    this.mixin('riothing');
+    this.track('APP_INIT', this.update);
+
+    this.on('update', console.log)
+  </script>
+</tag-test>

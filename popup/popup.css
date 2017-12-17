@@ -1,0 +1,102 @@
+body,html,div{
+	margin: 0;
+	padding:5;
+}
+body{
+	background:#4D4D4D;
+	font:400 14px/16px Arial;
+	color :#fff;
+	width:700px;
+	height:100%;
+	max-height:100px;
+	max-width:200px;
+}
+td{
+	padding-bottom:1px;
+	padding-right:1px;
+}
+
+:focus {
+    outline-color: #74E34F;
+}
+
+i{
+	font-size: 10px;
+}
+
+label{
+	font-size : 10px;
+	padding:11px;
+	background : #363636;
+}
+
+input{
+	text-align : left;
+	margin:0px;
+	width:100%;
+	background:#2B2B2B;
+	padding: 10;
+	border:none;
+	/*border: 1px #636363 solid;*/
+	font-weight: bold;
+	color:#ffffff;
+}
+
+button{
+	font-size: 10px;
+	padding: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background : #74E34F;
+	color : #ffffff;
+	width : 100%;
+	border: none;
+}
+
+ul{
+	padding:15px;
+	margin:0px;
+}
+
+li{
+	font-size:10px;
+}
+
+.spc{
+	padding : 10px;
+}
+
+.spc-lr{
+	padding-left : 10px;
+	padding-right:10px;
+}
+
+a{
+	color : #ffffff;
+	font-size : 14px;
+	text-decoration: none;
+}
+
+.bt{
+	background : #737373;
+	font-size : 12px;
+	border: none;
+}
+.bt:hover{
+	background : #ffffff;
+	color : #000000;
+}
+
+.orange{
+	background : #ff8a00;
+}
+.red{
+	background : #ff6867;
+}
+.green{
+	background : #74E34F;
+}
+.white{
+	color : #000000;
+	background : #FFFFFF;
+}

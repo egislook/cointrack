@@ -1,0 +1,55 @@
+{
+   "background": {
+	  "scripts": [
+      "libs/riot.min.js",
+      "libs/riot+compiler.min.js",
+      "libs/fucss.js",
+      "background.js"
+    ]
+   },
+   "browser_action": {
+      "default_icon": "ico/128.png",
+      "default_popup": "popup/popup.html",
+      "default_title": "cointrick"
+   },
+   "icons": {
+      "128": "ico/128.png",
+      "16": "ico/128.png",
+      "48": "ico/128.png"
+   },
+   "content_scripts": [
+		{
+			"all_frames": true,
+			"js": [
+        "libs/riot.min.js",
+        "libs/riot+compiler.min.js",
+        "libs/fucss.js",
+        "libs/riothing.js",
+        "app/stores.js",
+        "app/actions.js",
+        "content.js"
+      ],
+			"matches": [
+        "https://www.binance.com/trade.html?*",
+        "file:///C:/Users/Egis/Desktop/DEV/ext/test/index.html"
+      ],
+			"run_at": "document_end"
+		}
+   ],
+   "web_accessible_resources": [
+    "app/**",
+    "test/**"
+  ],
+   "description": "cointrick",
+   "manifest_version": 2,
+   "name": "cointrick",
+   "permissions": [
+		"tabs",
+    "activeTab",
+    "webNavigation",
+		"https://www.binance.com/trade.html?*",
+    "file:///C:/Users/Egis/Desktop/DEV/ext/test/index.html"
+	],
+   "short_name": "cointrick",
+   "version": "0.0.1"
+}
