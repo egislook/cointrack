@@ -6,12 +6,8 @@
       "libs/fucss.js",
       "background.js"
     ]
-   },
-   "browser_action": {
-      "default_icon": "ico/128.png",
-      "default_popup": "popup/popup.html",
-      "default_title": "cointrick"
-   },
+  },
+  "converted_from_user_script": true,
    "icons": {
       "128": "ico/128.png",
       "16": "ico/128.png",
@@ -30,15 +26,15 @@
         "content.js"
       ],
 			"matches": [
-        "https://www.binance.com/trade.html?*",
-        "file:///C:/Users/Egis/Desktop/DEV/ext/test/index.html"
+        "https://www.binance.com/trade.html?*"
       ],
 			"run_at": "document_end"
 		}
    ],
    "web_accessible_resources": [
     "app/**",
-    "test/**"
+    "test/**",
+    "libs/**"
   ],
    "description": "cointrick",
    "manifest_version": 2,
@@ -47,8 +43,7 @@
 		"tabs",
     "activeTab",
     "webNavigation",
-		"https://www.binance.com/trade.html?*",
-    "file:///C:/Users/Egis/Desktop/DEV/ext/test/index.html"
+		"https://www.binance.com/trade.html?*"
 	],
    "short_name": "cointrick",
    "version": "0.0.1"
